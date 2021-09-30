@@ -1,0 +1,157 @@
+body {
+    position: relative;
+	box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    background-color: grey;
+}
+
+.main-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+
+footer {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    margin-top: 0.5em;
+    background-color: grey;
+}
+
+/*------------------------ for small screen size ------------------------*/
+@media screen and (max-device-width: 480px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content article {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content article .article-a {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 1em;
+        background-color: red;
+    }
+
+    .main-content article .article-b {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 1em;
+        background-color: orange;
+    }
+
+    .main-content .side-bar {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1em;
+        background-color: yellow;
+    }
+}
+
+/*----------------------- for medium screen size ------------------------*/
+@media screen and (min-device-width: 481px) and (max-width:960px) {
+    .main-content article {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content article .article-a {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 1em;
+        background-color: red;
+    }
+
+    .main-content article .article-b {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 1em;
+        background-color: orange;
+    }
+
+    .main-content .side-bar {
+        display: block;
+        box-sizing: border-box;
+        width: 50%;
+        padding: 1em;
+        background-color: yellow;
+    }
+}
+
+/*------------------------ for large screen size ------------------------*/
+@media screen and (min-device-width: 961px) {
+    .main-content article {
+        width: 100%;
+        height: 50em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content article .article-a {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 1em;
+        background-color: red;
+    }
+
+    .main-content article .article-b {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 1em;
+        background-color: orange;
+    }
+
+    .main-content .side-bar {
+        display: block;
+        box-sizing: border-box;
+        width: 50%;
+        padding: 1em;
+        background-color: yellow;
+    }
+}
